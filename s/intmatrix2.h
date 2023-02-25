@@ -23,24 +23,19 @@ Declaration of intmatrix2 class
 -----------------------------------------------------------------*/
 class intmatrix2 {
 public:
-  //WRITE CODE.
+  //WRITE CODE.*
   //CANNOT DECLARE ANY GLOBAL VARIABLE
-  void init();
 
-
-    void init(int rows, int columns);
-    void init(int rows, int columns, int val);
-    void init(string str);
     intmatrix2();
     intmatrix2(int rows, int columns);
     intmatrix2(int rows, int columns, int val);
     intmatrix2(string str);
-    bool isEqual(intmatrix2 obj);
+    bool isEqual(intmatrix2& obj);
     bool isEmpty();
     void print(string str);
     void fini();
-    intmatrix2 add(intmatrix2 obj);
-    intmatrix2 mult(intmatrix2 obj);
+    intmatrix2 add(intmatrix2& obj);
+    intmatrix2 mult(intmatrix2& obj);
     friend ostream& operator<<(ostream& os, const intmatrix2& matrix);
     intmatrix2(const intmatrix2& other);
     intmatrix2& operator=(const intmatrix2& other);

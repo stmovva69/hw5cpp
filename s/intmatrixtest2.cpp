@@ -165,8 +165,8 @@ test bed
 -----------------------------------------------------------------*/
 static void testbed() {
   intmatrix2::makeShowOn() ;
-  //test_init_fini();
-  //test_add();
+  test_init_fini();
+  test_add();
   test_mult();
 }
 
